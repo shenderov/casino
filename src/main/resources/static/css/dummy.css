@@ -1,0 +1,43 @@
+
+.dummy-container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dummy-control-container {
+    width: 800px !important;
+    margin-top: 30px;
+}
+
+.dummy-info-panel {
+    font-weight: bold;
+    color: #00b300;
+}
+
+.dummy-element-group {
+    display: inline-flex;
+}
+
+.dummy-input-group {
+    display: inline-grid;
+}
+
+#dummy-btn-custom-action {
+    margin-left: 10px;
+}
+
+.dummy-input {
+    height: 45px;
+}
+
+#dummy-input-bet {
+    margin-bottom: 10px;
+}
+
+.dummy-big-button {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    padding: 0 !important;
+}

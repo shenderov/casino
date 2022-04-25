@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Casino</title>
+    <link href="./css/app.css" rel="stylesheet">
+    <link href="./css/slots.css" rel="stylesheet">
+    <link href="./css/dummy.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="w3-black">
+<div class="w3-top">
+    <div class="w3-bar">
+        <span class="w3-bar-item w3-hide-small"><strong>Casino</strong></span>
+        <a class="w3-bar-item w3-button w3-hide-small" data-link href="/">Home</a>
+        <a class="w3-bar-item w3-button w3-hide-small" data-link href="/slots">Slots Game</a>
+        <a class="w3-bar-item w3-button w3-hide-small" data-link href="/dummy">Dummy Game</a>
+        <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium"
+           onclick="document.getElementById('mobile-menu').style.display = 'block'"><i class="fa fa-bars w3-large"></i></a>
+        <span class="w3-right" id="nav-edit-name" style="display: none">
+            <input class="w3-bar-item w3-input" id="nav-edit-name-input" type="text">
+            <button class="w3-bar-item w3-button w3-green" id="nav-edit-name-submit">
+                <i class="fa fa-check"></i>
+            </button>
+            <button class="w3-bar-item w3-button w3-red" id="nav-edit-name-close">
+                <i class="fa fa-close"></i>
+            </button>
+        </span>
+        <span class="w3-right" id="nav-balance-reset-confirm" style="display: none">
+            <span class="w3-bar-item">Reset balance to default?</span>
+            <button class="w3-bar-item w3-button w3-red w3-right" id="nav-balance-reset-close">
+                <i class="fa fa-close"></i>
+            </button>
+            <button class="w3-bar-item w3-button w3-green w3-right" id="nav-balance-reset-submit">
+                <i class="fa fa-check"></i>
+            </button>
+        </span>
+        <span class="w3-bar-item w3-right" id="nav-session-info">
+            <span id="nav-name"></span><a href="#"><i class="w3-small fa fa-pencil" id="nav-name-edit-icon"
+                                                      title="Change Name"></i></a> | <span
+                id="nav-balance"></span> <span id="nav-currency-code" title=""></span><a href="#"><i
+                class="w3-small fa fa-undo" id="nav-balance-reset" title="Reset Balance"></i></a>
+        </span>
+    </div>
+    <div class="w3-bar-block w3-black w3-hide-large w3-hide-medium" id="mobile-menu" style="display: none">
+        <a class="w3-bar-item w3-button" data-link href="/"
+           onclick="document.getElementById('mobile-menu').style.display = 'none'">Home</a>
+        <a class="w3-bar-item w3-button" data-link href="/slots"
+           onclick="document.getElementById('mobile-menu').style.display = 'none'">Slots Game</a>
+        <a class="w3-bar-item w3-button" data-link href="/dummy"
+           onclick="document.getElementById('mobile-menu').style.display = 'none'">Dummy Game</a>
+    </div>
+</div>
+<div class="view-container">
+    <div class="w3-container" id="view"></div>
+</div>
+<div class="w3-container">
+    <div class="w3-modal" id="error-modal">
+        <div class="w3-modal-content w3-light-grey">
+            <header class="w3-container w3-red">
+                <span class="w3-button w3-display-topright"
+                      onclick="document.getElementById('error-modal').style.display='none'">&times;</span>
+                <h3 id="error-modal-title"></h3>
+            </header>
+            <div class="w3-container w3-section">
+                <h4><strong>Message: </strong><span id="error-modal-message"></span></h4>
+                <h4><strong>Error: </strong><span id="error-modal-error"></span></h4>
+                <div class="w3-button" id="error-modal-show-trace"
+                     onclick="document.getElementById('error-modal-trace').style.display='block'">show error trace...
+                </div>
+                <div class="w3-code" id="error-modal-trace" style="display: none"></div>
+            </div>
+            <footer class="w3-container w3-red">
+                <button class="w3-button w3-right w3-light-grey"
+                        onclick="document.getElementById('error-modal').style.display='none'"
+                        style="margin: 8px 0 8px 0">Cancel
+                </button>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="js/index.js" type="module"></script>
+</body>
+</html>

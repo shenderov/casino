@@ -1,0 +1,14 @@
+#view {
+    margin-top: 39px;
+    height: 95vh;
+}
+
+#nav-name-edit-icon, #nav-balance-reset {
+    margin-left: 7px;
+}
+
+.home-container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}

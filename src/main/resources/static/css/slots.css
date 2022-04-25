@@ -1,0 +1,93 @@
+.slots-container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slots-reels-window {
+    width: 760px;
+    height: 390px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slots-reel {
+    width: 30%;
+    overflow: hidden;
+    border: black 2px solid;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slots-reel-symbol {
+    display: block;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.slots-reel-glass {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 30px 40px rgb(0 0 0 / 60%) inset, 0 -30px 40px rgb(0 0 0 / 60%) inset;
+}
+
+hr.slots-payline {
+    border: 2px solid rgba(255, 0, 0, .5);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+}
+
+.slots-control-container {
+    width: 800px !important;
+    margin-top: 30px;
+}
+
+.slots-info-panel {
+    font-weight: bold;
+    color: #00b300;
+}
+
+.slots-big-square-button {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    padding: 0 !important;
+}
+
+.slots-small-rect-button {
+    width: 100px;
+    height: 45px;
+    font-weight: bold;
+    padding: 0 !important;
+}
+
+#slots-btn-bet-plus {
+    margin-bottom: 10px;
+}
+
+#slots-btn-autoplay {
+    margin-left: 10px;
+}
+
+#slots-btn-spin-ten {
+    margin-bottom: 10px;
+}
+
+.slots-autoplay-buttons-group {
+    display: inline-flex
+}
+
+.slots-control-buttons-group {
+    display: inline-grid
+}
