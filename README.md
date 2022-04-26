@@ -10,6 +10,7 @@ Features Overview:
 * Payback percentage can be set as an application parameter to define bet/win ratio
 * Transactions can be processed to make sure total wins are not excess total casino balance
 * A test game is available and it covers all APIs
+* Dockerfile is available for build
 
 ## APIs
 
@@ -23,11 +24,18 @@ Features Overview:
 | GET game/game        | query: game_id                       | Get game details                                        |
 
 Check a Postman collection for full list of APIs and usage examples:
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/20041876-4f698a8f-966c-4646-9248-bbdb80e2d0fb?action=collection%2Ffork&collection-url=entityId%3D20041876-4f698a8f-966c-4646-9248-bbdb80e2d0fb%26entityType%3Dcollection%26workspaceId%3Dc8c3f32a-3baa-4233-a4ce-f351287e455a)
 
 ## Test Web UI
 Available at `http://localhost:8080/` by default.
 Source code can be found in `resources/static` directory
+
+## Docker
+To build a docker image run `docker build -t casino .` in the project root directory.
+Then `docker run -dp 8080:8080 casino` to spin up a container.
+The UI will be available at `http://localhost:8080/`.
+Alternatively pull the latest image from Docker Hub: `docker pull shenderov/casino` and spin up a container `docker run -dp 8080:8080 shenderov/casino`.
 
 ### Casino as the platform
 Casino provides platform that handles user sessions, casino balance, transactions, and games management.
